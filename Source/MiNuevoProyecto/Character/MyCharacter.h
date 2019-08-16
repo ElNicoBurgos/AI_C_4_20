@@ -41,7 +41,8 @@ public:
 	UPROPERTY(EditAnyWhere) float currentDamage = 30.f;
 	/*FTimerHandle handleHit;
 	void StartHitTimer();*/
-	
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite) float lifeCharacter = 100.f;
+	UPROPERTY(EditAnyWhere, BlueprintReadWrite) float lifeCharacterCurrent = 100.f;
 
 	AActor *hitActor;
 	void MoveFoward(float value);

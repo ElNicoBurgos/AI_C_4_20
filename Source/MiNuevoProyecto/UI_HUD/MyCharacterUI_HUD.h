@@ -5,8 +5,10 @@
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include "MiNuevoProyectoGameModeBase.h"
+#include "Character/MyCharacter.h"
+#include "Components/ProgressBar.h"
+#include "Blueprint/UserWidget.h"
 #include "MyCharacterUI_HUD.generated.h"
-
 /**
  * 
  */
@@ -23,7 +25,11 @@ protected:
 	void NativeTick(const FGeometry& MyGeometry, float InDeltaTime) override;
 public:
 	class AMiNuevoProyectoGameModeBase* myGameMode;
+	class AMyCharacter* myCharacter;
 
 	UPROPERTY(meta = (BindWidget))
 	class UProgressBar* healtBar;
+
+
+	
 };
